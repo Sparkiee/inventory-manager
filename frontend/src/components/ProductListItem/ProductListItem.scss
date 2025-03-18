@@ -1,0 +1,23 @@
+.product-list-item {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  .action-buttons {
+    display: flex;
+    gap: 0.5rem;
+    button {
+      border-radius: 10px;
+      padding: 0.5rem 0.8rem;
+      background-color: #f0f0f0;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      &:hover {
+        background-color: #e0e0e0;
+      }
+    }
+  }
+}

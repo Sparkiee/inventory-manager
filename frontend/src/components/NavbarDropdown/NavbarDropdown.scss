@@ -1,0 +1,20 @@
+.navbar-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.2rem 0.8rem;
+  border-radius: 12px;
+  cursor: pointer;
+  .dropdown-text {
+    color: white;
+  }
+
+  .icon {
+    transition: transform 0.3s ease-in-out; // Ensure transition applies in both states
+    transform: rotate3d(0); // Default state
+
+    &.is-open {
+      transform: rotate3d(1, 0, 0, 180deg); // Rotated state
+    }
+  }
+}

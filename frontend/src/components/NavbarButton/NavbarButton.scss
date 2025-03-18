@@ -1,0 +1,15 @@
+.navbar-button {
+  display: flex;
+  text-align: center;
+  font-weight: 600;
+  padding: 0.8rem 1rem;
+  color: white;
+  background-color: rgb(44, 44, 44);
+  border-radius: 12px;
+  border: none;
+  transition: background-color 0.1s linear;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(50, 50, 50);
+  }
+}
